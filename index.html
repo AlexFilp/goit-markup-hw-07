@@ -659,71 +659,73 @@
         <strong class="modal__title"
           >Залиште свої дані, ми вам передзвонимо</strong
         >
-        <form>
-          <label for="name" class="modal__form-label">Ім'я</label>
-          <div class="modal__input-field">
+        <form class="modal-form" autocomplete="off">
+          <label for="name" class="modal-form__label">Ім'я</label>
+          <div class="modal-form__input-field">
             <input
               type="text"
               name="name"
               id="name"
-              class="modal__form-input"
+              class="modal-form__input"
               required
             />
-            <svg class="modal__icon" width="18" height="18">
+            <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-person"></use>
             </svg>
           </div>
-          <label for="phone-number" class="modal__form-label">Телефон</label>
-          <div class="modal__input-field">
+          <label for="phone-number" class="modal-form__label">Телефон</label>
+          <div class="modal-form__input-field">
             <input
               type="tel"
               name="phone-number"
               id="phone-number"
-              class="modal__form-input"
+              class="modal-form__input"
               required
             />
-            <svg class="modal__icon" width="18" height="18">
+            <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
           </div>
-          <label for="email" class="modal__form-label">Пошта</label>
-          <div class="modal__input-field">
+          <label for="email" class="modal-form__label">Пошта</label>
+          <div class="modal-form__input-field">
             <input
               type="email"
               name="email"
               id="email"
-              class="modal__form-input"
+              class="modal-form__input"
               required
-            /><svg class="modal__icon" width="18" height="18">
+            /><svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-envelope"></use>
             </svg>
           </div>
-          <label for="modal-comment" class="modal__form-label">Коментар</label>
+          <label for="modal-comment" class="modal-form__label">Коментар</label>
           <textarea
             name="comment"
             id="modal__comment"
             cols="30"
             rows="10"
             placeholder="Введіть текст"
-            class="modal__input-comment"
+            class="modal-form__input-comment"
           ></textarea>
 
-          <label class="modal__policy-label"
+          <label class="modal-form__policy-label"
             ><input
               type="checkbox"
               name="policy"
-              class="modal__policy-checkbox visually-hidden"
+              class="modal-form__policy-checkbox visually-hidden"
               required
             />
-            <svg class="modal__policy-icon" width="16" height="15">
+            <svg class="modal-form__policy-icon" width="16" height="15">
               <use href="./images/icons.svg#icon-modal-check"></use>
             </svg>
             <span
               >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="modal__policy-link">Умови договору</a></span
+              <a href="#" class="modal-form__policy-link"
+                >Умови договору</a
+              ></span
             ></label
           >
-          <button type="submit" class="modal__form-btn">Відправити</button>
+          <button type="submit" class="modal-form__btn">Відправити</button>
         </form>
       </div>
     </div>

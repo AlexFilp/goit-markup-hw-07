@@ -865,7 +865,7 @@ img {
   color: var(--main-text-clr);
 }
 
-.modal__form-label {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -876,12 +876,12 @@ img {
   color: var(--secondary-text-clr);
 }
 
-.modal__input-field {
+.modal-form__input-field {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal__form-input {
+.modal-form__input {
   padding: 12px 16px 12px 42px;
 
   width: 448px;
@@ -894,7 +894,7 @@ img {
   transition: border-color var(--animation);
 }
 
-.modal__icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -904,15 +904,15 @@ img {
   transition: fill var(--animation);
 }
 
-.modal__form-input:focus-within {
+.modal-form__input:focus-within {
   border-color: var(--brand-clr);
 }
 
-.modal__form-input:focus-within + .modal__icon {
+.modal-form__input:focus-within + .modal-form__icon {
   fill: var(--brand-clr);
 }
 
-.modal__input-comment {
+.modal-form__input-comment {
   padding: 12px 16px;
   margin-bottom: 20px;
 
@@ -927,11 +927,11 @@ img {
   transition: border-color var(--animation);
 }
 
-.modal__input-comment:focus-within {
+.modal-form__input-comment:focus-within {
   border-color: var(--brand-clr);
 }
 
-.modal__comment::placeholder {
+.modal-form__input-comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -939,19 +939,19 @@ img {
   color: var(--modal-comment-clr);
 }
 
-.modal__policy-icon {
+.modal-form__policy-icon {
   border: 2px solid var(--main-text-clr);
   border-radius: 2px;
 
   transition: background-color var(--animation), border-color var(--animation);
 }
 
-.modal__policy-checkbox:checked + .modal__policy-icon {
+.modal-form__policy-checkbox:checked + .modal-form__policy-icon {
   border-color: transparent;
   background-color: var(--brand-clr);
 }
 
-.modal__policy-label {
+.modal-form__policy-label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -964,11 +964,11 @@ img {
   color: var(--secondary-text-clr);
 }
 
-.modal__policy-link {
+.modal-form__policy-link {
   color: var(--brand-clr);
 }
 
-.modal__form-btn {
+.modal-form__btn {
   display: block;
   padding: 10px 52px;
   margin-left: auto;
@@ -989,7 +989,7 @@ img {
   transition: background-color var(--animation);
 }
 
-.modal__form-btn:hover,
-.modal__form-btn:focus {
+.modal-form__btn:hover,
+.modal-form__btn:focus {
   background-color: var(--modal-btn-bg-clr);
 }

@@ -920,6 +920,10 @@ img {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #757575;
 }
 

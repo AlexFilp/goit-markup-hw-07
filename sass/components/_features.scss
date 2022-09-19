@@ -4,14 +4,11 @@
 
 .features-section__list {
   display: flex;
+  gap: 30px;
 }
 
 .features-section__item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  width: calc((100% - 90px) / 4);
 }
 
 .features-section__icon-container {
@@ -20,10 +17,10 @@
   justify-content: center;
   align-items: center;
   background-color: $special-bg;
+  margin-bottom: 30px;
 }
 
 .features-section__title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-size: 14px;

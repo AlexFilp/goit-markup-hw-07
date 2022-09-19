@@ -3,6 +3,10 @@
   gap: 30px;
 }
 
+.clients-section__item {
+  width: calc((100% - 150px) / 6);
+}
+
 .clients-section__link {
   width: 170px;
   height: 92px;

@@ -80,12 +80,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +105,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .header__link {
@@ -224,13 +215,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
 .features-section__item {
-  width: 270px;
-}
-.features-section__item:not(:last-child) {
-  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
 }
 
 .features-section__icon-container {
@@ -245,10 +234,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .features-section__title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -264,10 +253,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
-.work-section__item:not(:last-child) {
-  margin-right: 30px;
+.work-section__item {
+  width: calc((100% - 60px) / 3);
 }
 
 .work-section__thumb {
@@ -304,17 +294,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
 .team-section__item {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-}
-.team-section__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-section__group {
@@ -376,6 +364,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+
+.clients-section__item {
+  width: calc((100% - 150px) / 6);
 }
 
 .clients-section__link {
@@ -505,13 +497,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  gap: 12px;
 }
 
 .form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
@@ -607,10 +599,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-}
-
-.portfolio-section__item-btn:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .portfolio-section__btn {
@@ -646,7 +635,7 @@ img {
 }
 
 .portfolio-section__item {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

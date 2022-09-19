@@ -6,10 +6,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.portfolio-section__item-btn:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .portfolio-section__btn {
@@ -43,7 +40,7 @@
 }
 
 .portfolio-section__item {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
 
   transition: box-shadow $animation;
 
